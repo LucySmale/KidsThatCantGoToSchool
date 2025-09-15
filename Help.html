@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+
+<title>The Missing Lessons:Kids that can't, go to school</title>
+<link Rel = "stylesheet" href="style.css">
+
+</head>
+
+
+<Body>
+<nav class="navbar">
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+
+            <li class="dropdown">
+   <li class="dropdown">
+    <a href="why.html" class="nav-link dropdown-toggle">Why kids cant go to school</a>
+    <ul class="dropdown-menu">
+        <li><a href="why.html#Discrimination-section">Unfair Treatment and Discrimination</a></li>
+        <li><a href="why.html#Enviroment-section">War and Unsafe Places</a></li>
+        <li><a href="why.html#poverty-section">Poverty and Money Problems</a></li>
+    </ul>
+</li>
+</li>
+        </li>
+        <li><a href="who.html" class="nav-link">Who is affected</a></li>
+        <li><a href="stories.html" class="nav-link">Real stories</a></li>
+        <li><a href="help.html" class="nav-link">Ways to help</a></li>
+        <li><a href="survey.html" class="nav-link">Survey</a></li>
+    </ul>
+</nav>
+    <script>
+document.querySelector('.learn-more-btn').addEventListener('click', function() {
+    document.getElementById('moreInfo').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+</script>
+<button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+
+
+
+<h1>Ways to help</h1>
+
+
+<p>You might think, “I’m only 13 or 14 — what can I do?” But the truth is, even small actions can create ripples that grow bigger. Here are ways you can help:</p>
+<div class="card-container">
+<div class="card">
+    <img src="Images /Knowledge.png" alt="Description of image">
+    <h3>Learn and share knowledge</h3>
+    <p>Start by educating yourself, then talk about it with your friends, teachers, or family. Post facts online or create a presentation at school. Every time you share, more people become aware of the problem.</p>
+</div>
+
+
+
+<div class="card">
+    <img src="Images /charity.png" alt="Description of image">
+    <h3>Support charities</h3>
+    <p>Organizations like UNICEF, Save the Children, or local charities work to get kids into school. You can help by donating, even small amounts, or by joining school fundraisers. Remember, even the cost of a movie ticket could buy supplies for a child.</p>
+</div>
+
+<div class="card">
+    <img src="Images /school.png" alt="Description of image">
+    <h3>Take action in your school</h3>
+    <p>You and your friends could run an awareness campaign. Make posters, organize a fundraiser, or hold a special assembly. You could even create a short video to show your classmates.</p>
+</div>
+
+
+<div class="card">
+    <img src="Images /Voice.png" alt="Description of image">
+    <h3>Use your voice</h3>
+    <p>Write to leaders, create petitions, or make posts online. Sometimes raising awareness is just as powerful as giving money. Young people have strong voices that deserve to be heard.</p>
+</div>
+
+
+
+<div class="card">
+    <img src="Images /creative.png" alt="Description of image">
+    <h3>Be creative</h3>
+    <p>Use art, writing, music, or social media to share this issue. A powerful drawing, TikTok, or short story can reach more people than you think.</p>
+</div>
+
+    
+
+
+
+<div class="card">
+    <img src="Images /penpal.png" alt="Description of image">
+    <h3>Start a Pen Pal or Online Friendship Project</h3>
+    <p>Many children who can’t go to school feel isolated and forgotten. One way to help is to build connections. Some charities and schools run safe pen-pal or online friendship programs where you can write letters, share drawings, or exchange messages with children in other countries.</p>
+</div>
+</div>
+</div>
+
+
+<script>
+document.querySelector('.learn-more-btn').addEventListener('click', function() {
+    document.getElementById('moreInfo').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+</script>
+
+<button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+<script>
+// Get the button and search box
+const searchBtn = document.getElementById('searchBtn');
+const searchBox = document.getElementById('searchBox');
+
+// Make the search box appear when magnifying glass is clicked
+searchBtn.addEventListener('click', function() {
+    if (searchBox.style.display === 'none') {
+        searchBox.style.display = 'block';
+        searchBox.focus(); // Puts cursor in the search box
+    } else {
+        searchBox.style.display = 'none';
+    }
+});
+
+// The search functionality
+searchBox.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const elements = document.querySelectorAll('h1, h2, p');
+    
+    elements.forEach(element => {
+        const text = element.textContent.toLowerCase();
+        
+        if (searchTerm && text.includes(searchTerm)) {
+            element.style.backgroundColor = ' #34495e';
+        } else {
+            element.style.backgroundColor = '';
+        }
+    });
+});
+</script>
+</script>
+
+    
+</body>

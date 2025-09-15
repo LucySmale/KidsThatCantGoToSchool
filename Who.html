@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+
+<title>The Missing Lessons:Kids that can't, go to school</title>
+<link Rel = "stylesheet" href="style.css">
+
+</head>
+
+
+<Body>
+<nav class="navbar">
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+
+            <li class="dropdown">
+   <li class="dropdown">
+    <a href="why.html" class="nav-link dropdown-toggle">Why kids cant go to school</a>
+    <ul class="dropdown-menu">
+        <li><a href="why.html#Discrimination-section">Unfair Treatment and Discrimination</a></li>
+        <li><a href="why.html#Enviroment-section">War and Unsafe Places</a></li>
+        <li><a href="why.html#poverty-section">Poverty and Money Problems</a></li>
+    </ul>
+</li>
+</li>
+        </li>
+        <li><a href="who.html" class="nav-link">Who is affected</a></li>
+        <li><a href="stories.html" class="nav-link">Real stories</a></li>
+        <li><a href="help.html" class="nav-link">Ways to help</a></li>
+        <li><a href="survey.html" class="nav-link">Survey</a></li>
+    </ul>
+</nav>
+
+    <script>
+document.querySelector('.learn-more-btn').addEventListener('click', function() {
+    document.getElementById('moreInfo').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+</script>
+
+</nav>
+<h1>Who is affected</h1>
+
+<div class="content-section">
+    <img src="Images /Girls.png" alt="Description of image 1">
+    <div class="text-content">
+        <h3>Girls</h3>
+        <p>Millions of girls are denied the chance to go to school. Some are expected to do housework, care for siblings, or marry early. Others are held back by cultural beliefs that say “school is only for boys.” When girls are denied education, whole communities lose out — because educated girls grow up to be women who change the world.</p>
+       
+    </div>
+</div>
+
+
+<div class="content-section">
+    <img src="Images /disabilities.png" alt="Description of image 1">
+    <div class="text-content">
+        <h3>Children with disabilities</h3>
+        <p>Imagine wanting to learn but not being able to climb the steps to your classroom. Or imagine not having the right equipment to read or write. For many children with disabilities, school buildings and lessons aren’t designed to include them. Without ramps, special materials, or supportive teachers, these kids are often left behind.</p>
+       
+    </div>
+</div>
+
+
+<div class="content-section">
+    <img src="Images /Refugees.png" alt="Description of image 1">
+    <div class="text-content">
+        <h3>Refugees and displaced children</h3>
+        <p>When families are forced to flee because of war, natural disasters, or violence, children lose more than their homes. They often lose access to school. Living in refugee camps or moving constantly makes education difficult to keep up. But for these children, school is more than learning — it’s also a place of safety and stability.</p>
+       
+    </div>
+</div>
+
+
+<div class="content-section">
+    <img src="Images /Povertykid.png" alt="Description of image 1">
+    <div class="text-content">
+        <h3>Children in extreme poverty</h3>
+        <p>For the poorest families, education can feel impossible. When there’s no money for food or shelter, school becomes less important. Yet ironically, education is the very thing that could help break the cycle of poverty.</p>
+       
+    </div>
+</div>
+
+
+
+
+
+
+<button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+<script>
+// Get the button and search box
+const searchBtn = document.getElementById('searchBtn');
+const searchBox = document.getElementById('searchBox');
+
+// Make the search box appear when magnifying glass is clicked
+searchBtn.addEventListener('click', function() {
+    if (searchBox.style.display === 'none') {
+        searchBox.style.display = 'block';
+        searchBox.focus(); // Puts cursor in the search box
+    } else {
+        searchBox.style.display = 'none';
+    }
+});
+
+// The search functionality
+searchBox.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const elements = document.querySelectorAll('h1, h2, p');
+    
+    elements.forEach(element => {
+        const text = element.textContent.toLowerCase();
+        
+        if (searchTerm && text.includes(searchTerm)) {
+            element.style.backgroundColor = ' #34495e';
+        } else {
+            element.style.backgroundColor = '';
+        }
+    });
+});
+</script>
+</script>
+
+
+    
+</body>

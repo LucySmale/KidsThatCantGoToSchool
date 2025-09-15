@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Missing Lessons:Kids that can't, go to school</title>
+<link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<body>
+<nav class="navbar">
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+
+            <li class="dropdown">
+   <li class="dropdown">
+    <a href="why.html" class="nav-link dropdown-toggle">Why kids cant go to school</a>
+    <ul class="dropdown-menu">
+        <li><a href="why.html#Discrimination-section">Unfair Treatment and Discrimination</a></li>
+        <li><a href="why.html#Enviroment-section">War and Unsafe Places</a></li>
+        <li><a href="why.html#poverty-section">Poverty and Money Problems</a></li>
+    </ul>
+</li>
+</li>
+        </li>
+        <li><a href="who.html" class="nav-link">Who is affected</a></li>
+        <li><a href="stories.html" class="nav-link">Real stories</a></li>
+        <li><a href="help.html" class="nav-link">Ways to help</a></li>
+        <li><a href="survey.html" class="nav-link">Survey</a></li>
+    </ul>
+</nav>
+<button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+</script>
+
+<section class="hero">
+    <img src="Images /HeroImage.png" alt="Dark classroom">
+    <div class="hero-content">
+        <h1>The Missing Lessons: Kids that can't go to school</h1>
+        <h2>Shining a Light on Lost Learning Opportunities</h2>
+        <button class="learn-more-btn">Learn More</button>
+    </div>
+</section>
+
+<section id="moreInfo">
+    <h2>Introduction</h2>
+    <p>All around the world, school is something many of us take for granted. But right now, more than 272 million children don’t get the chance to go. That’s like whole countries of kids missing out on learning, making friends, and building a future.</p>
+
+
+<p>The reasons are complicated—some children can’t afford school, some have to work to support their families, others live in areas with conflict, or in places where schools simply don’t exist. The impact is huge: without education, kids are more likely to face poverty, fewer opportunities, and struggles that last their whole lives.</p>
+
+<p>This website was made to help you understand the issue in a way that’s easy to follow. You’ll find:</p>
+<p>Why kids can’t go to school – the main causes explained</p>
+<p>Who is affected – the groups of children missing out</p>
+<p>Real stories – what life is like for kids without education</p>
+<p>Ways to help – actions you can take to make a difference</p>
+
+<p>If you want to explore, just click one of the tiles at the top of the page. Each one will take you to a different part of the story.
+By learning, sharing, and taking action, you can help give every child the chance at an education—and a brighter future.</p>
+</section>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-l9rp2IrLtA?si=GOUFOkNptwPMgG4r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<section class="tile-grid">
+    <a href="why.html" class="tile">
+        <img src="Images /Why.png" alt="Why kids can't go to school">
+        <h3>Why kids can't go to school</h3>
+    </a>
+    
+    <a href="who.html" class="tile">
+        <img src="Images /who.png" alt="Who is affected">
+        <h3>Who is affected</h3>
+    </a>
+    
+    <a href="stories.html" class="tile">
+        <img src="Images /realstories.png" alt="Real stories">
+        <h3>Real stories</h3>
+    </a>
+    
+    <a href="help.html" class="tile">
+        <img src="Images /Helping.png" alt="Ways to help">
+        <h3>Ways to help</h3>
+    </a>
+</section>
+
+
+
+
+
+
+<script>
+document.querySelector('.learn-more-btn').addEventListener('click', function() {
+    document.getElementById('moreInfo').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+</script>
+
+<button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+<script>
+// Get the button and search box
+const searchBtn = document.getElementById('searchBtn');
+const searchBox = document.getElementById('searchBox');
+
+// Make the search box appear when magnifying glass is clicked
+searchBtn.addEventListener('click', function() {
+    if (searchBox.style.display === 'none') {
+        searchBox.style.display = 'block';
+        searchBox.focus(); // Puts cursor in the search box
+    } else {
+        searchBox.style.display = 'none';
+    }
+});
+
+// The search functionality
+searchBox.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const elements = document.querySelectorAll('h1, h2, p');
+    
+    elements.forEach(element => {
+        const text = element.textContent.toLowerCase();
+        
+        if (searchTerm && text.includes(searchTerm)) {
+            element.style.backgroundColor = ' #34495e';
+        } else {
+            element.style.backgroundColor = '';
+        }
+    });
+});
+</script>
+</script>
+
+
+
+</body>
+</html>
+
+
+
+

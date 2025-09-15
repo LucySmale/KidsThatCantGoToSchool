@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+
+<title>The Missing Lessons:Kids that can't, go to school</title>
+<link Rel = "stylesheet" href="style.css">
+
+</head>
+
+
+<Body>
+<nav class="navbar">
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="why.html" class="nav-link">Why kids cant go to school</a></li>
+        <li><a href="who.html" class="nav-link">Who is affected</a></li>
+        <li><a href="stories.html" class="nav-link">Real stories</a></li>
+        <li><a href="help.html" class="nav-link">Ways to help</a></li>
+        <li><a href="survey.html" class="nav-link">Survey</a></li>
+    </ul>
+   </nav>
+
+   <button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+</script>
+
+ <h1 class="Title-why">
+     Why kids cant go to school</h1>
+<section class="Why">
+  <div class="image-container">
+    <img src="Images /Why.png" alt="Dark classroom">
+</div>
+   
+
+<div class="tiles-container">
+<a href="#poverty-section" class="tile2">
+    <img src="Images /Poverty.jpeg" alt="Why kids can't go to school">
+    <h3>Poverty and Money Problems</h3>
+</a>
+
+<a href="#Enviroment-section" class="tile2">
+    <img src="Images /War.jpeg" alt="Who is affected">
+    <h3>War and Unsafe Places</h3>
+</a>
+
+<a href="#Discrimination-section" class="tile2">
+    <img src="Images /Discrimination.png" alt="Real stories">
+    <h3>Unfair Treatment and Discrimination</h3>
+</a>
+</div>  
+
+<h1 id="poverty-section">Poverty and Money Problems</h1>
+
+<div class="image-poverty">
+    <img src="Images /Poverty.jpeg" alt="Description">
+</div>
+<p>
+For millions of families, money is the number one barrier. Even when schools say they’re “free,” there are hidden costs — uniforms, books, pens, exams, or the cost of transport to and from school. Families who are struggling to afford food and rent often can’t pay for these extra expenses.</p>
+<p> On top of that, many children are expected to help earn money. Instead of learning in a classroom, they might be selling food, working in shops, looking after animals, or helping with farming. Sometimes they spend their days collecting water or caring for younger brothers and sisters. When survival is on the line, education feels like a “luxury” — something families can’t afford.
+But the truth is, education is not a luxury. It’s a right. And without it, poverty continues from one generation to the next.</p>
+
+
+
+<h1 id="Enviroment-section">War and Unsafe Places</h1>
+<div class="image-Enviroment">
+    <img src="Images /War.jpeg" alt="Description">
+</div>
+<p>
+Imagine trying to study while hearing gunshots outside your window. Or imagine your school being bombed, burned, or turned into a military base. This is what children in war zones face every day.
+</p>
+
+<p>
+When a country is at war, education is often one of the first things lost. Even if a school is still standing, the journey there may be too dangerous. Families may be forced to flee, leaving everything behind — including their chance at an education.
+</p>
+
+<p>
+Conflict steals childhood. Instead of reading books, children may spend their days hiding, running, or working to survive. The trauma of war makes learning even harder. And when peace finally comes, years of education may already be lost.
+
+</p>
+
+
+<h1 id="Discrimination-section">Unfair Treatment and Discrimination</h1>
+<div class="image-discrimination">
+    <img src="Images /Discrimination.png" alt="Description">
+</div>
+
+
+<p>Not every child is treated equally. Around the world, many kids are excluded simply because of who they are.</p>
+
+<p>Girls – In some communities, families believe boys should study while girls should stay home. Millions of girls are forced to quit school once they reach a certain age, even if they want to keep learning.</p>
+<p>Children with disabilities – Many schools aren’t built to be inclusive. They may not have ramps, braille books, or trained teachers. As a result, children with physical or learning difficulties are left out.</p>
+<p>Minority groups – Children from certain ethnic, cultural, or religious backgrounds sometimes face prejudice. They may be excluded from schools or treated unfairly when they attend.</p> 
+<p>Discrimination closes doors for children who want nothing more than the same chance everyone else has — to learn, to grow, and to dream.</p>
+
+
+
+<script>
+document.querySelector('.learn-more-btn').addEventListener('click', function() {
+    document.getElementById('moreInfo').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+</script>
+
+<button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+<script>
+// Get the button and search box
+const searchBtn = document.getElementById('searchBtn');
+const searchBox = document.getElementById('searchBox');
+
+// Make the search box appear when magnifying glass is clicked
+searchBtn.addEventListener('click', function() {
+    if (searchBox.style.display === 'none') {
+        searchBox.style.display = 'block';
+        searchBox.focus(); // Puts cursor in the search box
+    } else {
+        searchBox.style.display = 'none';
+    }
+});
+
+// The search functionality
+searchBox.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const elements = document.querySelectorAll('h1, h2, p');
+    
+    elements.forEach(element => {
+        const text = element.textContent.toLowerCase();
+        
+        if (searchTerm && text.includes(searchTerm)) {
+            element.style.backgroundColor = ' #34495e';
+        } else {
+            element.style.backgroundColor = '';
+        }
+    });
+});
+</script>
+</script>
+
+    
+</body>

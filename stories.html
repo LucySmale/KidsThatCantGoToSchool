@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+
+<title>The Missing Lessons:Kids that can't, go to school</title>
+<link Rel = "stylesheet" href="style.css">
+
+</head>
+
+
+<Body>
+<nav class="navbar">
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+
+            <li class="dropdown">
+   <li class="dropdown">
+    <a href="why.html" class="nav-link dropdown-toggle">Why kids cant go to school</a>
+    <ul class="dropdown-menu">
+        <li><a href="why.html#Discrimination-section">Unfair Treatment and Discrimination</a></li>
+        <li><a href="why.html#Enviroment-section">War and Unsafe Places</a></li>
+        <li><a href="why.html#poverty-section">Poverty and Money Problems</a></li>
+    </ul>
+</li>
+</li>
+        </li>
+        <li><a href="who.html" class="nav-link">Who is affected</a></li>
+        <li><a href="stories.html" class="nav-link">Real stories</a></li>
+        <li><a href="help.html" class="nav-link">Ways to help</a></li>
+        <li><a href="survey.html" class="nav-link">Survey</a></li>
+    </ul>
+</nav>
+
+<button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+
+    <script>
+document.querySelector('.learn-more-btn').addEventListener('click', function() {
+    document.getElementById('moreInfo').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+</script>
+
+</nav>
+
+<div class="content-section">
+    <img src="Images /Amina.png" alt="Description of image 1">
+    <div class="text-content">
+        <h3>"My name is Amina."</h3>
+        <p>“ I’m 13 and from Sudan. I used to go to school every day, but when fighting broke out in my village, the school was destroyed. </p>
+            <p>Now I stay at home and help my mother cook. I want to go back to school because I dream of becoming a doctor. </p>
+            <p>But without school, that dream feels very far away.”</p>
+    </div>
+</div>
+
+
+
+<div class="content-section">
+    <img src="Images /Samual.png" alt="Description of image 1">
+    <div class="text-content">
+        <h3>“I am Samuel”</H3>
+            <p> I am 11 and from Nigeria. I can’t go to school because my family lives far away from the nearest once
+            </p> 
+<p> The journey is dangerous, and sometimes there is fighting on the road. I help my father look after our goats instead. </p> <p>I want to go to school so I can learn to read and one day become a doctor to help people in my village." </p>
+    </div>
+</div>
+
+
+
+'
+
+
+
+<div class="content-section">
+    <img src="Images /Rafiq.png" alt="Description of image 2">
+    <div class="text-content">
+        <h3>“My name is Rafiq."</h3>
+        <p>"I am 12 years old and live in Bangladesh.</p>  <p>My parents can’t afford uniforms or books, so I work in a shop to earn money.</p> <p> Some days I go to school, but other days I can’t. I love maths, and I hope one day I can study full time.” </p>
+</p>
+    </div>
+</div>
+
+
+
+<div class="content-section">
+    <img src="Images /Sofia.png" alt="Description of image 2">
+    <div class="text-content">
+        <h3>"I’m Sofia."</h3>
+
+            <p> "I am 13 years old from Honduras.</p>
+                <p> I loved school, but after a hurricane destroyed our classroom, it was never rebuilt.</p> <p>Now I stay home and help my mother sew clothes to sell. </p>  <p>I dream of becoming an artist, but without school, I don’t have the chance to learn new skills."</p>
+</p>
+    </div>
+</div>
+
+
+<div class="content-section">
+    <img src="Images /lila.png" alt="Description of image 3">
+    <div class="text-content">
+        <h3>“I’m Lila."</h3>
+        <p>"I am 14 years old from Afghanistan. I had to stop school because I’m a girl. My brother still goes every day. I want to become a teacher so I can help other girls like me, but without school, I don’t know if my dream will come true.”</p>
+    </div>
+</div>
+
+
+</Body>
+
+
+
+
+<button id="searchBtn">🔍</button>
+<input type="text" id="searchBox" placeholder="Search this page" style="display: none;">
+<script>
+// Get the button and search box
+const searchBtn = document.getElementById('searchBtn');
+const searchBox = document.getElementById('searchBox');
+
+// Make the search box appear when magnifying glass is clicked
+searchBtn.addEventListener('click', function() {
+    if (searchBox.style.display === 'none') {
+        searchBox.style.display = 'block';
+        searchBox.focus(); // Puts cursor in the search box
+    } else {
+        searchBox.style.display = 'none';
+    }
+});
+
+// The search functionality
+searchBox.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const elements = document.querySelectorAll('h1, h2, p');
+    
+    elements.forEach(element => {
+        const text = element.textContent.toLowerCase();
+        
+        if (searchTerm && text.includes(searchTerm)) {
+            element.style.backgroundColor = ' #34495e';
+        } else {
+            element.style.backgroundColor = '';
+        }
+    });
+});
+</script>
+</script>
+
+
+    
+</body>
